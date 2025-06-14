@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Brain Dump</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>🧠 Brain Dump</h1>
+  <p class="quote" id="quote"></p>
+
+  <div class="toolbar">
+    <button id="recordBtn">🎙️ Tap to Record</button>
+    <button id="toggleDarkMode">🌓</button>
+    <button id="toggleFeatures">✨ Advanced Features</button>
+  </div>
+
+  <div class="advanced" id="advancedFeatures">
+    <div class="section">
+      <h2>Folders</h2>
+      <input type="text" id="folderName" placeholder="New folder name" />
+      <button id="createFolder">➕ Create Folder</button>
+      <select id="folderSelect"></select>
+    </div>
+
+    <div class="section">
+      <h2>Font Options</h2>
+      <select id="fontPicker">
+        <option value="Inter">Inter</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Comic Sans MS">Comic Sans</option>
+      </select>
+      <input type="range" id="fontSizeSlider" min="14" max="30" value="16" />
+    </div>
+
+    <div class="section">
+      <h2>Manage Notes</h2>
+      <button id="deleteSelected">🗑️ Delete Selected</button>
+    </div>
+  </div>
+
+  <ul id="notesList"></ul>
+</body>
+</html>
